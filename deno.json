@@ -1,0 +1,9 @@
+{
+    "tasks":{
+        "start":"deno run -A --watch serve.ts"
+    },
+    "imports": {
+        "hono": "https://deno.land/x/hono@v3.9.1/mod.ts",
+        "zod": "https://deno.land/x/zod@v3.22.4/mod.ts"
+    }
+}
