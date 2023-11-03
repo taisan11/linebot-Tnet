@@ -1,4 +1,5 @@
 import { Hono } from 'https://deno.land/x/hono@v3.9.0/mod.ts'
+import ky from 'https://cdn.skypack.dev/ky?dts'
 
 const app = new Hono()
 
