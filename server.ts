@@ -3,7 +3,7 @@ import { Hono } from "hono";
 const app: Hono = new Hono();
 
 // app.get('/', (c) => c.redirect("https://github.com/taisan11/linebot-Tnet"))
-app.post("/api/webhook", async (c) => {
+app.post("/api/webhook/", async (c) => {
   console.log(JSON.stringify(c));
   const replys: Promise<Response>[] = []
   for (const event of data.events) {
