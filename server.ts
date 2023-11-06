@@ -5,6 +5,7 @@ const app: Hono = new Hono();
 // app.get('/', (c) => c.redirect("https://github.com/taisan11/linebot-Tnet"))
 app.post("/api/webhook", async (c) => {
     console.log(JSON.stringify(c));
+    console.log(c.body);
     return c.json({ message: "Hello World!" });
 });
 
